@@ -1,12 +1,13 @@
 package handlers
 
 import (
+	"github.com/dgrijalva/jwt-go"
 	"net/http"
 	"time"
 
 	"gin/config"
 	"gin/models"
-	"
+	"github.com/gin-gonic/gin"
 )
 
 const SecretKey = "your_secret_key"

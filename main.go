@@ -76,3 +76,17 @@ func main() {
 		log.Fatal("Failed to start server: ", err)
 	}
 }
+
+func main2() {
+	r := gin.Default()
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+	err := r.Run(":8080")
+	if err != nil {
+		panic(err)
+	}
+
+}

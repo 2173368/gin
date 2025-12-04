@@ -1,12 +1,13 @@
 package middleware
 
 import (
+	"github.com/dgrijalva/jwt-go"
 	"net/http"
 	"strings"
 
 	"gin/config"
 	"gin/models"
-	"
+	"github.com/gin-gonic/gin"
 )
 
 func Auth() gin.HandlerFunc {
